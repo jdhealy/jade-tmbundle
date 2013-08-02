@@ -479,6 +479,22 @@
 				</dict>
 			</array>
 		</dict>
+		<key>function-call</key>
+		<dict>
+			<key>begin</key>
+			<string>\(</string>
+			<key>end</key>
+			<string>\)</string>
+			<key>name</key>
+			<string>punctuation.section.function-call.jade</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.js</string>
+				</dict>
+			</array>
+		</dict>
 		<key>tag-generic-attribute</key>
 		<dict>
 			<key>match</key>
@@ -501,6 +517,10 @@
 				<dict>
 					<key>include</key>
 					<string>#tag-generic-attribute</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#function-call</string>
 				</dict>
 			</array>
 		</dict>
