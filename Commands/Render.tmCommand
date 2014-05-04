@@ -6,9 +6,7 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/usr/bin/env sh
-echo "&lt;pre style='font-family:Menlo; font-size: 12px; word-wrap: break-word;'&gt;"
-jade | sed 's/&lt;/\&amp;lt;/g' | sed 's/&gt;/\&amp;gt;/g'
-echo "&lt;/pre&gt;"
+jade | html-beautify --file - | mate -a --type text.html.basic
 </string>
 	<key>input</key>
 	<string>document</string>
@@ -21,6 +19,6 @@ echo "&lt;/pre&gt;"
 	<key>scope</key>
 	<string>source.jade</string>
 	<key>uuid</key>
-	<string>4E2866A2-7FAE-4980-84E1-0E8AAB7C36FB</string>
+	<string>DC53E6C4-9150-4DBB-8ED0-01F416A2E5E3</string>
 </dict>
 </plist>
